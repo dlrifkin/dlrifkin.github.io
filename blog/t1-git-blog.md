@@ -1,12 +1,18 @@
-Title
-Subtitle
+My First Post:
+Understanding Git, Github, and why we use them in version control!
 
-Date
+October 11, 2014
 
-Paragraph 1
+As a beginning developer, it's amazing how many things I do not know. It is natural that I don't know how to code an application by myself. Much to my initial chagrin, I'm also finding that I didn't even know where to start! Case in point: version control.
 
-Paragraph 2
+Version control is a tactic, and really should be a way of life. Maybe that wasn't descriptive, so let's try again. Version control is the practice of saving different "editions" of your work.After a change is made to a program, you can save a version of the program that includes that change. Then, should you make a change to this version of a program, you can save it again as a new version. Doing this over and over for different changes is version control. Got it? I think you do.
 
-Paragraph 3
+"So," you might ask, "why do we use version control?" I'm glad you let me use your voice to ask that question. Version control is important for two reasons: error checking and collaboration. By saving a version of a program after EACH major change, you have the ability to backtrack through your work in the case of any major bugs or errors. It would be frighteningly difficult to correct mistakes if you only had one saved version of a program! Thank versiona control for that.
 
-Add as many paragraphs as you want!!!
+The second reason to use version control is for collaboration. Saving versions of your code and sharing them with others creates allows you to share an entire project with your partners. Version control can be used to double-check a collaborator's work, to split the workload amongst your group of collaborators, and generally to organize the work that people are sharing in.
+
+"So," I continue to ask myself using your voice, "what sorts of software can we use to keep track of our changes?" We can use git. Git is a version control software that saves your versions locally (that is, on your machine). Each time you make a change to your code, a "git" of that change can be saved using a command line process called committing. Basically, we are making note each time a change has been made and saved. You should remember to describe clearly what was done in each version, so that you'll know where to look later should you need to backtrack. After you commit a git, you'll be able to view a log of commits that you have created, which allows you to navigate between versions.
+
+I'll preempt your question in this last part and explain where gits go. After creating gits, they go to the great git hub in the sky. That's right, there is a hub for gits, which conveniently enough is called Github. Github is a website that uses git to store various versions of your code. While there might be other websites that can be used to store gits or for version control, Github has certain important and beautiful features that make it a great resource. For one, you can fork folders (called repositories on Github) from public profiles to yours, and from your Github account to your local machine, and back again. In doing so, you'll have access to all gits remotely and locally, if you know how to navigate them. More importantly, Github makes collaboration easy. The previously-described forking process allows you to link your repositories to those of your collaborators, giving you realtime access to all the code created by your team. Being able to see what work is being done makes it easier to communicate about that work and more generally to communicate with each other.
+
+Wow! That's it for now, but I'm sure we'll be back soon to discuss new important features.
