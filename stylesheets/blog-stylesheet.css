@@ -1,0 +1,63 @@
+#header {
+    background-color: blue /*greyscale*/;
+    heigth: 200em;
+    /*width: 800em;*/
+    text-align : center;
+}
+
+#aboutbox, #contactbox, #blogbox {
+    color: #AA0114;
+    height: 1em;
+    width: 2em; /*em check*/
+    text-align:center;
+    border: 2px solid black;
+    /*position: fixed;
+    margin-right: 10px; time will tell haha*/
+    /*maybe rel pos for stacking the buttons? prolly gonna have to google it*/
+}
+
+#main {
+    height: 600em;
+    width: 500em;
+    text-align: center;
+    border: 2px solid black;
+    /*pos issues*/
+}
+
+#blogp1 {
+    /*pos issues*/
+    height: /*2/3*/;
+    width: /*BlogP2 - img - padding*/;
+    text-align: center;
+}
+
+#blogp2 {
+    /*pos issues*/
+    height: /*2/3*/;
+    width: /*BlogP2 - img - padding*/;
+    text-align: center;
+}
+
+#blogimage {
+    /*pos issues*/
+    height: /*2/3*/;
+    width: /*BlogP2 - img - padding*/;
+    text-align: center;
+}
+
+#sharebox {
+    text-align: left;
+}
+
+#sidebar {
+    /*height and pos concerns*/
+    width:250em;/*tinker with number*/
+    float:right /*pos anywhere, maybe use table*/;
+    
+}
+
+#footer {
+    width: 100%;
+    text-align: left;
+    clear:both;
+}
