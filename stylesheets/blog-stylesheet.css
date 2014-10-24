@@ -1,41 +1,61 @@
 #header {
-    background-color: blue /*greyscale*/;
-    heigth: 200em;
-    /*width: 800em;*/
+    background-color: greyscale;
+    height: 10%;
     text-align : center;
+    font-size: 25px;
+    border-bottom: 2px solid black;
+    margin-top: 0px;
+    padding-top: 0px;
+    border-top: 0px
+    width: 100%
 }
 
-#aboutbox, #contactbox, #blogbox {
+.clickbox {
     color: #AA0114;
-    height: 1em;
-    width: 2em; /*em check*/
-    text-align:center;
+    height: 2em;
+    width: 4em; /*em check*/
+    text-align:right;
     border: 2px solid black;
     /*position: fixed;
     margin-right: 10px; time will tell haha*/
     /*maybe rel pos for stacking the buttons? prolly gonna have to google it*/
 }
 
-#main {
-    height: 600em;
-    width: 500em;
+#sidebar {
+    /*height and pos concerns*/
+    width:20%;
+    height:60%;
+    float:left; /*pos anywhere, maybe use table*/
     text-align: center;
-    border: 2px solid black;
+    border: 0px 2px 2px 2px solid black;
+}
+
+/*#sidebar.img {
+    height: 200px;
+    width: 200px;
+    border:1px solid black;
+}*/
+
+#maintext {
+    height: 40%;
+    width: 70%;
+    margin-right: 50px;
+    text-align: center;
+    float: right;
+    border: 0px 2px 2px 2px solid black;
     /*pos issues*/
 }
 
 #blogp1 {
     /*pos issues*/
-    height: /*2/3*/;
-    width: /*BlogP2 - img - padding*/;
-    text-align: center;
+    /*width: BlogP2 - img - padding*/
+    text-align: left;
 }
 
 #blogp2 {
     /*pos issues*/
-    height: /*2/3*/;
-    width: /*BlogP2 - img - padding*/;
-    text-align: center;
+    /*width: BlogP2 - img - padding*/
+    text-align: left;
 }
 
 #blogimage {
@@ -45,19 +65,11 @@
     text-align: center;
 }
 
-#sharebox {
-    text-align: left;
-}
-
-#sidebar {
-    /*height and pos concerns*/
-    width:250em;/*tinker with number*/
-    float:right /*pos anywhere, maybe use table*/;
-    
-}
-
 #footer {
-    width: 100%;
+    width: 95%;
+    border: 2px solid black;
     text-align: left;
+    bottom: 2em;
     clear:both;
+    position: static;
 }
