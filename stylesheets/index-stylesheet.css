@@ -49,15 +49,9 @@ a:hover{
 		font-size: 1.2em;
 }
 
-#mysmilingface{
-		position: fixed;
-		float: right;
-		top: 20%;
-		right: 31%;}
-
 #sidebar {
 		float: right;
-		font-size: 20px;
+		font-size: 1.7em;
 		text-align: center;
 		margin-top: 20%;
 		margin-right: 4%;
@@ -66,3 +60,7 @@ a:hover{
 		border: 1px solid black;
 }
 
+ul{
+	text-align: left;
+	font-size: .8em;
+}
