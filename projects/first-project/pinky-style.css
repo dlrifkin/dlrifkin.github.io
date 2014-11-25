@@ -55,5 +55,7 @@ p{
 }
 
 #breaking{
-	position: relative;
+	position: fixed;
+	top: 100px;
+	left:100px;
 }
