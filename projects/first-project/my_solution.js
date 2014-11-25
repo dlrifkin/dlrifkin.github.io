@@ -14,33 +14,84 @@ var winPic = document.getElementById("breaking-pinky-brain")
 // 	var hasDrunk = false;
 // 	var hasEaten = false;	
 // }
+//   function pickKey(event) {                    
+//     switch (event.keyCode) {
+//         case 37:
+//             leftArrow();
+// 	        break;
+
+// 		case 39:
+//             rightArrow();
+//             break;
+
+//         case 38:
+//             upArrow();
+//             break;
+
+//         case 40:
+//             downArrow();
+//             break;
+//         }
+// }
+
+// function leftArrow(){
+// 	if(posLeft > 0){
+//  		posLeft -= 50;
+// 		brainPic.style.left = posLeft + "px";
+// 		pinkyPic.style.left = posLeft + "px";	
+// 	}       
+// }
+
+// function rightArrow(){
+//     if(posLeft < 500){
+//     	posLeft += 50;
+// 		brainPic.style.top = posLeft + "px";
+//     	pinkyPic.style.top = posLeft + "px";
+// 	}
+// }
+
+// function upArrow(){
+// 	if(posTop > 0){
+// 		posTop -= 50;
+//     	brainPic.style.top = posTop + "px";
+//     	pinkyPic.style.top = posTop + "px";
+// 	}
+// }
+
+// function downArrow(){
+// 	if(posTop < 500){
+//         posTop += 50;
+//         brainPic.style.top = posTop + "px";
+//     	pinkyPic.style.top = posTop + "px";
+//     }
+// }
 
 function move(m) {
  		//left, up, right, down
-    if(m.keyCode === 37){
+    else if(m.keyCode === 37){
 		if(posLeft > 49){
      	   posLeft -= 50;
 		   brainPic.style.left = posLeft + "px";
 		   pinkyPic.style.left = posLeft + "px";
           }
         }
-    if(m.keyCode === 38){
+    else if(m.keyCode === 38){
         if(posTop > 49){
         	posTop -= 50;
         	brainPic.style.top = posTop + "px";
         	pinkyPic.style.top = posTop + "px";
         }
-    if(m.keyCode === 39){
+    else if(m.keyCode === 39){
         if(posLeft < 500){
         	posLeft += 50;
 			brainPic.style.top = posLeft + "px";
         	pinkyPic.style.top = posLeft + "px";
         }
-      if(m.keyCode === 40){
+    else if(m.keyCode === 40){
           if(posTop < 500){
             posTop += 50;
-            brainPic.style.top = posTop + "px";}
-	    	pinkyPic.style.top = posTop + "px";}
+            brainPic.style.top = posTop + "px";
+	    	pinkyPic.style.top = posTop + "px";
 	    }
     //play()
     // ran();
@@ -49,7 +100,7 @@ function move(m) {
     // win();
 }
 
-document.onkeydown = move;
+document.onkeydown = move();
 
 // var play = function(){
 // 	if (mice.hasExercised ===false){
@@ -64,7 +115,7 @@ document.onkeydown = move;
 // 	}
 // }
 
-// var ran = function(){
+// function ran(){
 // 	if (posTop === 200 && posLeft === 100){
 		
 // 		wheelPic.style.visibility = 'hidden';
@@ -75,13 +126,13 @@ document.onkeydown = move;
 //  	swap()
 // }
 
-// var swap = function(){
+// function swap(){
 // 		alert("Now help Brain eat and drink.")
 // 		brainPic.style.visibility = 'visible';
 // 		pinkyPic.style.visibility = 'hidden';
 // }
 
-// var drank = function(){
+// function drank(){
 // 	if (mice.hasExercised === true) {
 // 		if (posTop === 100 && posLeft === 450){
  		
@@ -93,7 +144,7 @@ document.onkeydown = move;
 //  	}
 // }
 
-// var ate = function(){
+// function ate(){
 // 	if (mice.hasExercised === true){
 // 		if (posTop === 400 && posLeft === 150){
 			
@@ -105,7 +156,7 @@ document.onkeydown = move;
 //  	}
 // }
 
-// var win = function(){
+// function win(){
 // 	if (mice.hasDrunk === true && mice.hasEaten === true){
 // 		alert("Brain is perfectly nourished. Go take over the world!");
 // 		cage.style.visibility = 'hidden';
