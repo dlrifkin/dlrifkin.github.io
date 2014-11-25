@@ -26,6 +26,8 @@ var mice {
 	var hasEaten = false;	
 }
 
+document.onkeydown = move;
+
 function move(m) {
  		//left, up, right, down
     if(m.keyCode === 37){
@@ -59,9 +61,7 @@ function move(m) {
     win();
 }
 
-document.onkeydown = move;
-
-function ran(){
+var ran = function(){
 	if (posTop === 200 && posLeft === 100){
 		
 		wheelPic.style.visibility = 'hidden';
@@ -72,13 +72,13 @@ function ran(){
  	swap()
 }
 
-function swap(){
+var swap = function(){
 		alert("Now help Brain eat and drink.")
 		brainPic.style.visibility = 'visible';
 		pinkyPic.style.visibility = 'hidden';
 }
 
-function drank(){
+var drank = function(){
 	if (mice.hasExercised === true) {
 		if (posTop === 100 && posLeft === 450){
  		
@@ -90,7 +90,7 @@ function drank(){
  	}
 }
 
-function ate(){
+var ate = function(){
 	if (mice.hasExercised === true){
 		if (posTop === 400 && posLeft === 150){
 			
@@ -102,7 +102,7 @@ function ate(){
  	}
 }
 
-function win(){
+var win = function(){
 	if (mice.hasDrunk === true && mice.hasEaten === true){
 		alert("Brain is perfectly nourished. Go take over the world!");
 		cage.style.visibility = 'hidden';
