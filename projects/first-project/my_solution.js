@@ -12,33 +12,23 @@ var winPic = document.getElementById("breaking-pinky-brain")
 var posTop = 0
 var posLeft = 0
 
-var start {
-	brainPic.style.visibility = 'hidden';
-	runPic.style.visibility = 'hidden';
-	eatPic.style.visibility = 'hidden';
-	drinkPic.style.visibility = 'hidden';
-	winPic.style.visibility = 'hidden';	
-}
+// var mice {
+// 	var hasExercised = false;
+// 	var hasDrunk = false;
+// 	var hasEaten = false;	
+// }
 
-var mice {
-	var hasExercised = false;
-	var hasDrunk = false;
-	var hasEaten = false;	
-}
-
-document.onkeydown = move;
-
-function move(m) {
+var move = function(m) {
  		//left, up, right, down
     if(m.keyCode === 37){
-		if(posLeft > 0){
+		if(posLeft > 49){
      	   posLeft -= 50;
 		   brainPic.style.left = posLeft + "px";
 		   pinkyPic.style.left = posLeft + "px";
           }
         }
     if(m.keyCode === 38){
-        if(posTop < 0){
+        if(posTop > 49){
         	posTop -= 50;
         	brainPic.style.top = posTop + "px";
         	pinkyPic.style.top = posTop + "px";
@@ -55,57 +45,73 @@ function move(m) {
             brainPic.style.top = posTop + "px";}
 	    	pinkyPic.style.top = posTop + "px";}
 	    }
-    ran();
-    ate();
-    drank();
-    win();
+    //play()
+    // ran();
+    // ate();
+    // drank();
+    // win();
 }
 
-var ran = function(){
-	if (posTop === 200 && posLeft === 100){
+document.onkeypress = move;
+
+// var play = function(){
+// 	if (mice.hasExercised ===false){
+// 		brainPic.style.visibility = 'hidden';
+// 		runPic.style.visibility = 'hidden';
+// 		eatPic.style.visibility = 'hidden';
+// 		drinkPic.style.visibility = 'hidden';
+// 		winPic.style.visibility = 'hidden';
+// 	}
+// 	else {
+
+// 	}
+// }
+
+// var ran = function(){
+// 	if (posTop === 200 && posLeft === 100){
 		
-		wheelPic.style.visibility = 'hidden';
-		runPic.style.visibility = 'visible';
+// 		wheelPic.style.visibility = 'hidden';
+// 		runPic.style.visibility = 'visible';
 
- 	mice.hasExercised = true;
- 	}
- 	swap()
-}
+//  	mice.hasExercised = true;
+//  	}
+//  	swap()
+// }
 
-var swap = function(){
-		alert("Now help Brain eat and drink.")
-		brainPic.style.visibility = 'visible';
-		pinkyPic.style.visibility = 'hidden';
-}
+// var swap = function(){
+// 		alert("Now help Brain eat and drink.")
+// 		brainPic.style.visibility = 'visible';
+// 		pinkyPic.style.visibility = 'hidden';
+// }
 
-var drank = function(){
-	if (mice.hasExercised === true) {
-		if (posTop === 100 && posLeft === 450){
+// var drank = function(){
+// 	if (mice.hasExercised === true) {
+// 		if (posTop === 100 && posLeft === 450){
  		
- 			waterPic.style.visibility = 'visible';
-			drinkPic.style.visibility = 'hidden';
+//  			waterPic.style.visibility = 'visible';
+// 			drinkPic.style.visibility = 'hidden';
 
- 			mice.hasDrunk = true;
- 		}
- 	}
-}
+//  			mice.hasDrunk = true;
+//  		}
+//  	}
+// }
 
-var ate = function(){
-	if (mice.hasExercised === true){
-		if (posTop === 400 && posLeft === 150){
+// var ate = function(){
+// 	if (mice.hasExercised === true){
+// 		if (posTop === 400 && posLeft === 150){
 			
-			foodPic.style.visibility = 'hidden';
-			eatPic.style.visibility = 'visible';
+// 			foodPic.style.visibility = 'hidden';
+// 			eatPic.style.visibility = 'visible';
 
-	 		mice.hasEaten = true;
- 		}
- 	}
-}
+// 	 		mice.hasEaten = true;
+//  		}
+//  	}
+// }
 
-var win = function(){
-	if (mice.hasDrunk === true && mice.hasEaten === true){
-		alert("Brain is perfectly nourished. Go take over the world!");
-		cage.style.visibility = 'hidden';
-		winPic.style.visibility= 'visible';
-		}
-}
+// var win = function(){
+// 	if (mice.hasDrunk === true && mice.hasEaten === true){
+// 		alert("Brain is perfectly nourished. Go take over the world!");
+// 		cage.style.visibility = 'hidden';
+// 		winPic.style.visibility= 'visible';
+// 		}
+// }
