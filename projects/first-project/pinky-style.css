@@ -1,0 +1,48 @@
+body {
+	background-image: url("../imgs/earth.png")
+}
+
+#cage{
+	width: 700px;
+	height 500px;
+	background-color: #ffff99;
+	border: 5px solid black;
+	position: relative;
+	margin-left: 100px;
+}
+
+#pinky, #brain {
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	left: 0px;
+	top: 0px;
+}
+
+#wheel, #pinky-wheel{
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	left: 100px;
+	top: 200px;
+}
+
+#water, #brain-water{
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	left: 450px;
+	top: 100px;
+}
+
+#food, #brain-food{
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	left: 150px;
+	top: 400px;
+}
+
+#breaking{
+	position: relative;
+}
