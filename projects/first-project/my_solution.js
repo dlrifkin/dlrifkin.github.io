@@ -9,16 +9,13 @@ var foodPic = document.getElementById("food")
 var eatPic = document.getElementById("brain-food")
 var winPic = document.getElementById("breaking-pinky-brain")
 
-var posTop = 0
-var posLeft = 0
-
 // var mice {
 // 	var hasExercised = false;
 // 	var hasDrunk = false;
 // 	var hasEaten = false;	
 // }
 
-var move = function(m) {
+function move(m) {
  		//left, up, right, down
     if(m.keyCode === 37){
 		if(posLeft > 49){
@@ -52,7 +49,7 @@ var move = function(m) {
     // win();
 }
 
-document.onkeypress = move;
+document.onkeydown = move;
 
 // var play = function(){
 // 	if (mice.hasExercised ===false){
