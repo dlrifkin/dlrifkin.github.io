@@ -2,6 +2,16 @@ body {
 	display: block;
 }
 
+h2{
+	text-align: center;
+	max-width: 55%;
+	font-family: serif;
+}
+
+p{
+	text-align: center;
+}
+
 #cage{
 	width: 700px;
 	height 500px;
