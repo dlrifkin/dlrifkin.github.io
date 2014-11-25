@@ -12,17 +12,15 @@ var winPic = document.getElementById("breaking-pinky-brain")
 var posTop = 0
 var posLeft = 0
 
-var start {
-	pinkyPic.style.display = 'block';
-	brainPic.style.display = 'none';
-	wheelPic.style.display = 'block';
-	runPic.style.display = 'none';
-	foodPic.style.display = 'block';
-	eatPic.style.display = 'none';
-	waterPic.style.display = 'block';
-	drinkPic.style.display = 'none';
-	winPic.style.display = 'none';	
-}
+pinkyPic.style.display = 'block';
+brainPic.style.display = 'none';
+wheelPic.style.display = 'block';
+runPic.style.display = 'none';
+foodPic.style.display = 'block';
+eatPic.style.display = 'none';
+waterPic.style.display = 'block';
+drinkPic.style.display = 'none';
+winPic.style.display = 'none';	
 
 var mice {
 	var hasExercised = false;
