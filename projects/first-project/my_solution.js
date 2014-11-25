@@ -12,15 +12,13 @@ var winPic = document.getElementById("breaking-pinky-brain")
 var posTop = 0
 var posLeft = 0
 
-pinkyPic.style.display = 'block';
-brainPic.style.display = 'none';
-wheelPic.style.display = 'block';
-runPic.style.display = 'none';
-foodPic.style.display = 'block';
-eatPic.style.display = 'none';
-waterPic.style.display = 'block';
-drinkPic.style.display = 'none';
-winPic.style.display = 'none';	
+var start {
+	brainPic.style.visibility = 'hidden';
+	runPic.style.visibility = 'hidden';
+	eatPic.style.visibility = 'hidden';
+	drinkPic.style.visibility = 'hidden';
+	winPic.style.visibility = 'hidden';	
+}
 
 var mice {
 	var hasExercised = false;
@@ -66,8 +64,8 @@ document.onkeydown = move;
 function ran(){
 	if (posTop === 200 && posLeft === 100){
 		
-		wheelPic.style.display = 'none';
-		runPic.style.display = 'block';
+		wheelPic.style.visibility = 'hidden';
+		runPic.style.visibility = 'visible';
 
  	mice.hasExercised = true;
  	}
@@ -76,16 +74,16 @@ function ran(){
 
 function swap(){
 		alert("Now help Brain eat and drink.")
-		brainPic.style.display = 'block';
-		pinkyPic.style.display = 'none';
+		brainPic.style.visibility = 'visible';
+		pinkyPic.style.visibility = 'hidden';
 }
 
 function drank(){
 	if (mice.hasExercised === true) {
 		if (posTop === 100 && posLeft === 450){
  		
- 			waterPic.style.display = 'block';
-			drinkPic.style.display = 'none';
+ 			waterPic.style.visibility = 'visible';
+			drinkPic.style.visibility = 'hidden';
 
  			mice.hasDrunk = true;
  		}
@@ -96,8 +94,8 @@ function ate(){
 	if (mice.hasExercised === true){
 		if (posTop === 400 && posLeft === 150){
 			
-			foodPic.style.display = 'none';
-			eatPic.style.display = 'block';
+			foodPic.style.visibility = 'hidden';
+			eatPic.style.visibility = 'visible';
 
 	 		mice.hasEaten = true;
  		}
@@ -107,7 +105,7 @@ function ate(){
 function win(){
 	if (mice.hasDrunk === true && mice.hasEaten === true){
 		alert("Brain is perfectly nourished. Go take over the world!");
-		cage.style.display = 'none';
-		winPic.style.display= 'block';
+		cage.style.visibility = 'hidden';
+		winPic.style.visibility= 'visible';
 		}
 }
