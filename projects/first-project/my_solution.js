@@ -14,90 +14,90 @@ var winPic = document.getElementById("breaking-pinky-brain")
 // 	var hasDrunk = false;
 // 	var hasEaten = false;	
 // }
-//   function pickKey(event) {                    
-//     switch (event.keyCode) {
-//         case 37:
-//             leftArrow();
-// 	        break;
+  function pickKey(event) {                    
+    switch (event.keyCode) {
+        case 37:
+            leftArrow();
+	        break;
 
-// 		case 39:
-//             rightArrow();
-//             break;
+		case 39:
+            rightArrow();
+            break;
 
-//         case 38:
-//             upArrow();
-//             break;
+        case 38:
+            upArrow();
+            break;
 
-//         case 40:
-//             downArrow();
-//             break;
+        case 40:
+            downArrow();
+            break;
+        }
+}
+
+function leftArrow(){
+	if(posLeft > 0){
+ 		posLeft -= 50;
+		brainPic.style.left = posLeft + "px";
+		pinkyPic.style.left = posLeft + "px";	
+	}       
+}
+
+function rightArrow(){
+    if(posLeft < 500){
+    	posLeft += 50;
+		brainPic.style.top = posLeft + "px";
+    	pinkyPic.style.top = posLeft + "px";
+	}
+}
+
+function upArrow(){
+	if(posTop > 0){
+		posTop -= 50;
+    	brainPic.style.top = posTop + "px";
+    	pinkyPic.style.top = posTop + "px";
+	}
+}
+
+function downArrow(){
+	if(posTop < 500){
+        posTop += 50;
+        brainPic.style.top = posTop + "px";
+    	pinkyPic.style.top = posTop + "px";
+    }
+}
+
+// function move(m) {
+//  		//left, up, right, down
+//     else if(m.keyCode === 37){
+// 		if(posLeft > 49){
+//      	   posLeft -= 50;
+// 		   brainPic.style.left = posLeft + "px";
+// 		   pinkyPic.style.left = posLeft + "px";
+//           }
 //         }
-// }
-
-// function leftArrow(){
-// 	if(posLeft > 0){
-//  		posLeft -= 50;
-// 		brainPic.style.left = posLeft + "px";
-// 		pinkyPic.style.left = posLeft + "px";	
-// 	}       
-// }
-
-// function rightArrow(){
-//     if(posLeft < 500){
-//     	posLeft += 50;
-// 		brainPic.style.top = posLeft + "px";
-//     	pinkyPic.style.top = posLeft + "px";
-// 	}
-// }
-
-// function upArrow(){
-// 	if(posTop > 0){
-// 		posTop -= 50;
-//     	brainPic.style.top = posTop + "px";
-//     	pinkyPic.style.top = posTop + "px";
-// 	}
-// }
-
-// function downArrow(){
-// 	if(posTop < 500){
-//         posTop += 50;
-//         brainPic.style.top = posTop + "px";
-//     	pinkyPic.style.top = posTop + "px";
-//     }
-// }
-
-function move(m) {
- 		//left, up, right, down
-    else if(m.keyCode === 37){
-		if(posLeft > 49){
-     	   posLeft -= 50;
-		   brainPic.style.left = posLeft + "px";
-		   pinkyPic.style.left = posLeft + "px";
-          }
-        }
-    else if(m.keyCode === 38){
-        if(posTop > 49){
-        	posTop -= 50;
-        	brainPic.style.top = posTop + "px";
-        	pinkyPic.style.top = posTop + "px";
-        }
-    else if(m.keyCode === 39){
-        if(posLeft < 500){
-        	posLeft += 50;
-			brainPic.style.top = posLeft + "px";
-        	pinkyPic.style.top = posLeft + "px";
-        }
-    else if(m.keyCode === 40){
-          if(posTop < 500){
-            posTop += 50;
-            brainPic.style.top = posTop + "px";
-	    	pinkyPic.style.top = posTop + "px";
-	    }
-    //play()
-    // ran();
-    // ate();
-    // drank();
-    // win();
+//     else if(m.keyCode === 38){
+//         if(posTop > 49){
+//         	posTop -= 50;
+//         	brainPic.style.top = posTop + "px";
+//         	pinkyPic.style.top = posTop + "px";
+//         }
+//     else if(m.keyCode === 39){
+//         if(posLeft < 500){
+//         	posLeft += 50;
+// 			brainPic.style.top = posLeft + "px";
+//         	pinkyPic.style.top = posLeft + "px";
+//         }
+//     else if(m.keyCode === 40){
+//           if(posTop < 500){
+//             posTop += 50;
+//             brainPic.style.top = posTop + "px";
+// 	    	pinkyPic.style.top = posTop + "px";
+// 	    }
+//     //play()
+//     // ran();
+//     // ate();
+//     // drank();
+//     // win();
 }
 
 document.onkeydown = move();
