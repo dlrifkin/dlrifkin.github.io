@@ -30,6 +30,10 @@ p{
 	top: 0px;
 }
 
+#brain, #pinky-wheel, #brain-water, #brain-food, #breaking{
+	visibility: hidden;
+}
+
 #wheel, #pinky-wheel{
 	position: absolute;
 	height: 50px;
