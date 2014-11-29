@@ -67,13 +67,13 @@ function ran(){
 		runPic.style.visibility = 'visible';
 
  	mice.hasExercised = true;
- 	}
+//  	}
  	
-}
+// }
 
-function swap(){
-	if (mice.hasExercised === true){
-	alert("Now help Brain eat and drink.")
+// function swap(){
+// 	if (mice.hasExercised === true){
+// 	alert("Now help Brain eat and drink.")
 	brainPic.style.visibility = 'visible';
 	pinkyPic.style.visibility = 'hidden';
 	}
