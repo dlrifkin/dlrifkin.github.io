@@ -21,21 +21,21 @@ var posTop = 0;
 document.onkeydown = function move(m) {
  		//left, up, right, down
     if(m.keyCode === 37){
-		if(posLeft > 49){
+		if(posLeft > 0){
      	   posLeft -= 50;
 		   brainPic.style.left = posLeft + "px";
 		   pinkyPic.style.left = posLeft + "px";
           }
         }
     if(m.keyCode === 38){
-        if(posTop > 49){
+        if(posTop > 0){
         	posTop -= 50;
         	brainPic.style.top = posTop + "px";
         	pinkyPic.style.top = posTop + "px";
     		}
 		}
     if(m.keyCode === 39){
-        if(posLeft < 500){
+        if(posLeft < 700){
         	posLeft += 50;
 			brainPic.style.top = posLeft + "px";
         	pinkyPic.style.top = posLeft + "px";
