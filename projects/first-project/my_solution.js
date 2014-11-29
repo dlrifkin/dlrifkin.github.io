@@ -66,7 +66,7 @@ var mice {
 //     }
 // }
 
-function move(m) {
+document.onkeydown = function move(m) {
  		//left, up, right, down
     else if(m.keyCode === 37){
 		if(posLeft > 49){
@@ -94,13 +94,12 @@ function move(m) {
 	    	pinkyPic.style.top = posTop + "px";
 	    }
     play()
-    ran();
-    ate();
-    drank();
-    win();
 }
 
-document.onkeydown = move();
+function play() {
+
+}
+
 
 function ran(){
 	if (posTop === 200 && posLeft === 100){
