@@ -53,7 +53,6 @@ document.onkeydown = function move(m) {
 
 function play() {
 	ran();
-	swap();
 	// ate();
 	// drank();
 	// win();
@@ -67,6 +66,7 @@ function ran(){
 		runPic.style.visibility = 'visible';
 
  	mice.hasExercised = true;
+ 	swap();
  	}
  	
 }
