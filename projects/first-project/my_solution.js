@@ -65,7 +65,9 @@ function ran(){
 		
 		wheelPic.style.visibility = 'hidden';
 		runPic.style.visibility = 'visible';
-
+		brainPic.style.visibility = 'visible';
+		pinkyPic.style.visibility = 'hidden';
+ 	
  	mice.hasExercised = true;
 //  	}
  	
@@ -74,8 +76,7 @@ function ran(){
 // function swap(){
 // 	if (mice.hasExercised === true){
 // 	alert("Now help Brain eat and drink.")
-	brainPic.style.visibility = "visible";
-	pinkyPic.style.visibility = "hidden";
+	
 	}
 }
 
