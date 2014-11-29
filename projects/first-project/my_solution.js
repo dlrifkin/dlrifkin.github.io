@@ -68,31 +68,34 @@ var mice {
 
 document.onkeydown = function move(m) {
  		//left, up, right, down
-    else if(m.keyCode === 37){
+    if(m.keyCode === 37){
 		if(posLeft > 49){
      	   posLeft -= 50;
 		   brainPic.style.left = posLeft + "px";
 		   pinkyPic.style.left = posLeft + "px";
           }
         }
-    else if(m.keyCode === 38){
+    if(m.keyCode === 38){
         if(posTop > 49){
         	posTop -= 50;
         	brainPic.style.top = posTop + "px";
         	pinkyPic.style.top = posTop + "px";
-        }
-    else if(m.keyCode === 39){
+    		}
+		}
+    if(m.keyCode === 39){
         if(posLeft < 500){
         	posLeft += 50;
 			brainPic.style.top = posLeft + "px";
         	pinkyPic.style.top = posLeft + "px";
+        	}
         }
-    else if(m.keyCode === 40){
+    if(m.keyCode === 40){
           if(posTop < 500){
             posTop += 50;
             brainPic.style.top = posTop + "px";
 	    	pinkyPic.style.top = posTop + "px";
-	    }
+	    	}
+		}
     // play()
 }
 
