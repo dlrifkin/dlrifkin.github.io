@@ -37,12 +37,12 @@ document.onkeydown = function move(m) {
     if(m.keyCode === 39){
         if(posLeft < 700){
         	posLeft += 50;
-			brainPic.style.top = posLeft + "px";
-        	pinkyPic.style.top = posLeft + "px";
+			brainPic.style.left = posLeft + "px";
+        	pinkyPic.style.left = posLeft + "px";
         	}
         }
     if(m.keyCode === 40){
-          if(posTop < 500){
+          if(posTop < 450){
             posTop += 50;
             brainPic.style.top = posTop + "px";
 	    	pinkyPic.style.top = posTop + "px";
