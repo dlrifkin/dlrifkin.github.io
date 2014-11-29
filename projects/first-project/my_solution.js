@@ -35,7 +35,7 @@ document.onkeydown = function move(m) {
     		}
 		}
     if(m.keyCode === 39){
-        if(posLeft < 700){
+        if(posLeft < 650){
         	posLeft += 50;
 			brainPic.style.left = posLeft + "px";
         	pinkyPic.style.left = posLeft + "px";
@@ -48,30 +48,33 @@ document.onkeydown = function move(m) {
 	    	pinkyPic.style.top = posTop + "px";
 	    	}
 		}
-    // play()
+    play()
 }
 
-// function play() {
+function play() {
+	ran();
+	ate();
+	// drank();
+	// win();
+}
 
-// }
 
-
-// function ran(){
-// 	if (posTop === 200 && posLeft === 100){
+function ran(){
+	if (posTop === 200 && posLeft === 100){
 		
-// 		wheelPic.style.visibility = 'hidden';
-// 		runPic.style.visibility = 'visible';
+		wheelPic.style.visibility = 'hidden';
+		runPic.style.visibility = 'visible';
 
-//  	mice.hasExercised = true;
-//  	}
-//  	swap()
-// }
+ 	mice.hasExercised = true;
+ 	}
+ 	swap()
+}
 
-// function swap(){
-// 		alert("Now help Brain eat and drink.")
-// 		brainPic.style.visibility = 'visible';
-// 		pinkyPic.style.visibility = 'hidden';
-// }
+function swap(){
+		alert("Now help Brain eat and drink.")
+		brainPic.style.visibility = 'visible';
+		pinkyPic.style.visibility = 'hidden';
+}
 
 // function drank(){
 // 	if (mice.hasExercised === true) {
