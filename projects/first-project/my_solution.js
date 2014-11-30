@@ -9,11 +9,11 @@ var foodPic = document.getElementById("food")
 var eatPic = document.getElementById("brain-food")
 var winPic = document.getElementById("breaking-pinky-brain")
 
-// var mice {
-// 	hasExercised: false;
-// 	hasDrunk: false;
-// 	hasEaten: false;	
-// }
+var mice {
+	hasExercised: false;
+	hasDrunk: false;
+	hasEaten: false;	
+}
 
 var posLeft = 0;
 var posTop = 0;
@@ -68,33 +68,36 @@ function ran(){
 		pinkyPic.style.visibility = 'hidden';
  	
  	mice.hasExercised = true;
-//  	}
+  	}
  	
-// }
+ }
 
 // function swap(){
 // 	if (mice.hasExercised === true){
 // 	alert("Now help Brain eat and drink.")
-	}
-}
+	
 
 function drank(){
-	if (mice.hasExercised === true && posTop === 100 && posLeft === 450) {
-		
+	if (mice.hasExercised === true) {
+		if (posTop === 100 && posLeft === 450){
+ 		
  			waterPic.style.visibility = 'visible';
 			drinkPic.style.visibility = 'hidden';
 
  			mice.hasDrunk = true;
+ 		}
  	}
 }
 
 function ate(){
-	if (mice.hasExercised === true && posTop === 400 && posLeft === 150){
+	if (mice.hasExercised === true){
+		if (posTop === 400 && posLeft === 150){
 			
 			foodPic.style.visibility = 'hidden';
 			eatPic.style.visibility = 'visible';
 
 	 		mice.hasEaten = true;
+ 		}
  	}
 }
 
