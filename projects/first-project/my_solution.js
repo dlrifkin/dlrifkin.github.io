@@ -99,8 +99,9 @@ function eat(){
 
 function win(){
 	if (drank === true && ate === true){
-		// alert("Brain is perfectly nourished. Go take over the world!");
 		cage.style.visibility = 'hidden';
 		winPic.style.visibility= 'visible';
+
+		setTimeout(function(){alert("Brain is perfectly nourished. Go take over the world!")}, 900);
 		}
 }
