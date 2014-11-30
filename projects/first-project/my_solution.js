@@ -54,9 +54,9 @@ document.onkeydown = function move(m) {
 function play() {
 	ran();
 	swap();
-	// ate();
-	// drank();
-	// win();
+	ate();
+	drank();
+	win();
 }
 
 
