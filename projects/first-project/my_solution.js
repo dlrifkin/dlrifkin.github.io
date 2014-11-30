@@ -78,8 +78,8 @@ function run(){
 function drink(){
 	if (ran === true && posTop === 100 && posLeft === 450) {
 
- 			waterPic.style.visibility = 'visible';
-			drinkPic.style.visibility = 'hidden';
+ 			waterPic.style.visibility = 'hidden';
+			drinkPic.style.visibility = 'visible';
 
  			drank = true;
  	
