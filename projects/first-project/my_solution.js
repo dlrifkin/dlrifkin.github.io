@@ -1,19 +1,19 @@
-var cage = document.getElementById("cage")
-var pinkyPic = document.getElementById("pinky")
-var brainPic = document.getElementById("brain")
-var wheelPic = document.getElementById("wheel")
-var runPic = document.getElementById("pinky-wheel")
-var waterPic = document.getElementById("water")
-var drinkPic = document.getElementById("brain-water")
-var foodPic = document.getElementById("food")
-var eatPic = document.getElementById("brain-food")
-var winPic = document.getElementById("breaking-pinky-brain")
+var cage = document.getElementById("cage");
+var pinkyPic = document.getElementById("pinky");
+var brainPic = document.getElementById("brain");
+var wheelPic = document.getElementById("wheel");
+var runPic = document.getElementById("pinky-wheel");
+var waterPic = document.getElementById("water");
+var drinkPic = document.getElementById("brain-water");
+var foodPic = document.getElementById("food");
+var eatPic = document.getElementById("brain-food");
+var winPic = document.getElementById("breaking-pinky-brain");
 
 var mice {
 	hasExercised: false;
 	hasDrunk: false;
 	hasEaten: false;	
-}
+};
 
 var posLeft = 0;
 var posTop = 0;
