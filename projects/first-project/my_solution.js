@@ -7,7 +7,7 @@ var waterPic = document.getElementById("water");
 var drinkPic = document.getElementById("brain-water");
 var foodPic = document.getElementById("food");
 var eatPic = document.getElementById("brain-food");
-var winPic = document.getElementById("breaking-pinky-brain");
+var winPic = document.getElementById("breaking");
 
 var ran = false;
 var drank = false;
