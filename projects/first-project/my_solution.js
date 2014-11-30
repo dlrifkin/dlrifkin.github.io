@@ -9,8 +9,8 @@ var foodPic = document.getElementById("food");
 var eatPic = document.getElementById("brain-food");
 var winPic = document.getElementById("breaking-pinky-brain");
 
-// var mice {
-// 	hasExercised: false;
+var mice {
+	hasExercised: false;}
 // 	hasDrunk: false;
 // 	hasEaten: false;	
 // };
@@ -53,9 +53,10 @@ document.onkeydown = function move(m) {
 
 function play() {
 	ran();
-	ate();
-	drank();
-	win();
+	swap();
+	// ate();
+	// drank();
+	// win();
 }
 
 
@@ -72,10 +73,11 @@ function ran(){
  	
  }
 
-// function swap(){
-// 	if (mice.hasExercised === true){
-// 	alert("Now help Brain eat and drink.")
-	
+function swap(){
+	if (mice.hasExercised === true){
+	console.log("Now help Brain eat and drink.")
+	}	
+}
 
 function drank(){
 	if (mice.hasExercised === true && posTop === 100 && posLeft === 450) {
