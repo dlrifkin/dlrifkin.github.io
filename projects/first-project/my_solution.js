@@ -64,7 +64,7 @@ function run(){
 		runPic.style.visibility = 'visible';
 		brainPic.style.visibility = 'visible';
 		pinkyPic.style.visibility = 'hidden';
-		setTimeout(function(){alert("Now help Braineat and drink.")}, 700);
+		setTimeout(function(){alert("Now help Brain eat and drink.")}, 100);
 
  	ran = true;
   	}
