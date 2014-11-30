@@ -64,7 +64,8 @@ function run(){
 		runPic.style.visibility = 'visible';
 		brainPic.style.visibility = 'visible';
 		pinkyPic.style.visibility = 'hidden';
- 	
+		setTimeout(function(){alert("Now help Braineat and drink.")}, 700);
+
  	ran = true;
   	}
  	
@@ -102,7 +103,6 @@ function win(){
 		cage.style.visibility = 'hidden';
 		winPic.style.visibility= 'visible';
 
-		setTimeout(function(){alert("Brain is perfectly nourished. Go take over the world!")}, 900);
-		break
+		setTimeout(function(){alert("Brain is perfectly nourished. Go take over the world!")}, 700);
 		}
 }
