@@ -9,11 +9,11 @@ var foodPic = document.getElementById("food")
 var eatPic = document.getElementById("brain-food")
 var winPic = document.getElementById("breaking-pinky-brain")
 
-var mice {
-	hasExercised: false;
-	hasDrunk: false;
-	hasEaten: false;	
-}
+// var mice {
+// 	hasExercised: false;
+// 	hasDrunk: false;
+// 	hasEaten: false;	
+// }
 
 var posLeft = 0;
 var posTop = 0;
