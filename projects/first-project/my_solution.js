@@ -53,7 +53,6 @@ document.onkeydown = function move(m) {
 
 function play() {
 	ran();
-	swap();
 	ate();
 	drank();
 	win();
@@ -104,10 +103,10 @@ function ate(){
  	}
 }
 
-function win(){
-	if (mice.hasDrunk === true && mice.hasEaten === true){
-		// alert("Brain is perfectly nourished. Go take over the world!");
-		cage.style.visibility = 'hidden';
-		winPic.style.visibility= 'visible';
-		}
-}
+// function win(){
+// 	if (mice.hasDrunk === true && mice.hasEaten === true){
+// 		// alert("Brain is perfectly nourished. Go take over the world!");
+// 		cage.style.visibility = 'hidden';
+// 		winPic.style.visibility= 'visible';
+// 		}
+// }
