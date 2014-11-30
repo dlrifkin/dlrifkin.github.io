@@ -103,5 +103,6 @@ function win(){
 		winPic.style.visibility= 'visible';
 
 		setTimeout(function(){alert("Brain is perfectly nourished. Go take over the world!")}, 900);
+		break
 		}
 }
