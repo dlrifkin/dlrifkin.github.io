@@ -75,31 +75,26 @@ function ran(){
 // function swap(){
 // 	if (mice.hasExercised === true){
 // 	alert("Now help Brain eat and drink.")
-	
 	}
 }
 
 function drank(){
-	if (mice.hasExercised === true) {
-		if (posTop === 100 && posLeft === 450){
- 		
+	if (mice.hasExercised === true && posTop === 100 && posLeft === 450) {
+		
  			waterPic.style.visibility = 'visible';
 			drinkPic.style.visibility = 'hidden';
 
  			mice.hasDrunk = true;
- 		}
  	}
 }
 
 function ate(){
-	if (mice.hasExercised === true){
-		if (posTop === 400 && posLeft === 150){
+	if (mice.hasExercised === true && posTop === 400 && posLeft === 150){
 			
 			foodPic.style.visibility = 'hidden';
 			eatPic.style.visibility = 'visible';
 
 	 		mice.hasEaten = true;
- 		}
  	}
 }
 
