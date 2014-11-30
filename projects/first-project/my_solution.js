@@ -77,27 +77,27 @@ function ran(){
 // 	alert("Now help Brain eat and drink.")
 	
 
-function drank(){
-	if (mice.hasExercised === true && posTop === 100 && posLeft === 450) {
+// function drank(){
+// 	if (mice.hasExercised === true && posTop === 100 && posLeft === 450) {
 
- 			waterPic.style.visibility = 'visible';
-			drinkPic.style.visibility = 'hidden';
+//  			waterPic.style.visibility = 'visible';
+// 			drinkPic.style.visibility = 'hidden';
 
- 			mice.hasDrunk = true;
+//  			mice.hasDrunk = true;
  	
- 	}
-}
+//  	}
+// }
 
-function ate(){
-	if (mice.hasExercised === true && posTop === 400 && posLeft === 150){
+// function ate(){
+// 	if (mice.hasExercised === true && posTop === 400 && posLeft === 150){
 			
-			foodPic.style.visibility = 'hidden';
-			eatPic.style.visibility = 'visible';
+// 			foodPic.style.visibility = 'hidden';
+// 			eatPic.style.visibility = 'visible';
 
-	 		mice.hasEaten = true;
+// 	 		mice.hasEaten = true;
  		
- 	}
-}
+//  	}
+// }
 
 // function win(){
 // 	if (mice.hasDrunk === true && mice.hasEaten === true){
